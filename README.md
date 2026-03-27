@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ShopFlow Backend
 
 A production-style e-commerce backend built with Spring Boot 3, JWT authentication, and Stripe payment integration.
@@ -64,7 +65,7 @@ Use environment variables instead of hardcoding secrets:
 ```bash
 # database
 setx SHOPFLOW_DB_USER "root"
-setx SHOPFLOW_DB_PASSWORD "YOUR_MYSQL_PASSWORD"
+setx SHOPFLOW_DB_PASSWORD "Mali@123"
 # optional if DB is not localhost default
 setx SHOPFLOW_DB_URL "jdbc:mysql://localhost:3306/shopflow_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC"
 
@@ -196,9 +197,10 @@ Use this order in Postman for quick end-to-end testing:
   "stockQty": 50,
   "imageUrl": "https://example.com/mouse.jpg"
 }
-```
 
----
+
+
+
 
 ### Cart
 
@@ -318,3 +320,7 @@ UPDATE users SET role = 'ADMIN' WHERE email = 'admin@shopflow.com';
 - **Price snapshot on order items** — `priceAtPurchase` is stored at checkout time so order totals remain accurate even if the product price changes later.
 - **Cart isolation** — every cart operation validates that the item belongs to the requesting user's cart before any mutation.
 - **Stripe webhook verification** — the webhook endpoint verifies Stripe's HMAC signature before trusting the event payload.
+=======
+# second-round-assignm-final-13287-gaurang
+Final Project Assignment - This repository contains the complete final project code and documentation.
+>>>>>>> e8f341b7e3c77ab7f6ffb09c2cffa205033b93fe
